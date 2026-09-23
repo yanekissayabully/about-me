@@ -1,10 +1,8 @@
-// Все личные данные лежат тут одним местом — легко поменять без правки компонентов.
-
 export const profile = {
   name: "Расул",
   role: "ИП · 4 курс КБТУ",
   tagline: "Автоматизирую бизнес-процессы: боты, сайты и всё, что экономит людям время.",
-  avatarUrl: "/about-me/avatar.jpg", // lives in public/, prefixed with basePath from next.config.mjs
+  avatarUrl: "/about-me/avatar.jpg",
 };
 
 export const about = {
