@@ -4,7 +4,7 @@ import styles from "./Contact.module.css";
 
 function Contact() {
   return (
-    <section className={cardStyles.card}>
+    <section className={cardStyles.card} style={{ animationDelay: "0.42s" }}>
       <h2>Contact</h2>
       <ul className={styles.list}>
         {contacts.map((c) => (

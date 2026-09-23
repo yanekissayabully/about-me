@@ -12,10 +12,25 @@
   align-items: center;
   gap: 8px;
   font-size: 0.95rem;
+  padding: 6px 8px;
+  margin: 0 -8px;
+  border-radius: 8px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(4px);
 }
 
 .icon {
   font-size: 1.1rem;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.item:hover .icon {
+  transform: scale(1.15);
 }
 
 .label {

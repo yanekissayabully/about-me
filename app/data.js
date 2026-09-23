@@ -4,7 +4,7 @@ export const profile = {
   name: "Расул",
   role: "ИП · 4 курс КБТУ",
   tagline: "Автоматизирую бизнес-процессы: боты, сайты и всё, что экономит людям время.",
-  avatarUrl: "https://api.dicebear.com/9.x/avataaars/svg?seed=Rasul&backgroundColor=1a1a2e",
+  avatarUrl: "/about-me/avatar.jpg", // lives in public/, prefixed with basePath from next.config.mjs
 };
 
 export const about = {

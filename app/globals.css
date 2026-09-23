@@ -22,9 +22,53 @@ body {
 body {
   margin: 0;
   font-family: "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
-  background: radial-gradient(circle at top left, var(--bg-2), var(--bg-1) 70%);
+  background: var(--bg-1);
   color: var(--text);
   line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.28;
+  z-index: -1;
+  animation: drift 16s ease-in-out infinite alternate;
+}
+
+body::before {
+  top: -120px;
+  left: -100px;
+  background: var(--accent);
+}
+
+body::after {
+  bottom: -140px;
+  right: -100px;
+  background: var(--accent-2);
+  animation-delay: -8s;
+}
+
+@keyframes drift {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(40px, 30px) scale(1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    animation: none;
+  }
 }
 
 a {
