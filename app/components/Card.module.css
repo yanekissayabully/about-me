@@ -1,0 +1,33 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(6px);
+}
+
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+  color: var(--accent-2);
+}
+
+.aboutText {
+  margin: 0 0 16px;
+  color: var(--text);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillBadge {
+  background: rgba(78, 205, 196, 0.15);
+  border: 1px solid rgba(78, 205, 196, 0.4);
+  color: var(--accent-2);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}

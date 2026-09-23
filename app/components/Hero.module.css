@@ -1,0 +1,44 @@
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 0 6px rgba(255, 107, 107, 0.15);
+  margin-bottom: 12px;
+}
+
+.name {
+  margin: 0;
+  font-size: 2rem;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.role {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.tagline {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+  max-width: 420px;
+}
+
+@media (max-width: 420px) {
+  .avatar {
+    width: 110px;
+    height: 110px;
+  }
+}
